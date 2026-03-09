@@ -1,0 +1,14 @@
+# 🔑 Construire OptiGest_KeyGen.exe sur Windows
+# ================================================
+# À exécuter UNE SEULE FOIS sur ton PC Windows
+
+# 1. Installer PyInstaller
+pip install pyinstaller customtkinter
+
+# 2. Depuis le dossier optigest_v3, lancer :
+pyinstaller --onefile --windowed --name "OptiGest_KeyGen" tools/keygen.py
+
+# 3. L'exe sera dans :  dist/OptiGest_KeyGen.exe
+
+# Pour ajouter une icône (.ico) :
+# pyinstaller --onefile --windowed --icon=assets/icon.ico --name "OptiGest_KeyGen" tools/keygen.py
